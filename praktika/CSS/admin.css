@@ -1,0 +1,138 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #f4f6fb;
+}
+
+/* LOGIN */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.6rem 0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: none;
+  background: #4f8ef7;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* NAV */
+.admin-nav {
+  background: #4f8ef7;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* DASHBOARD */
+.dashboard {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.stat-card p {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: .5rem 0 0;
+  color: #4f8ef7;
+}
+
+.stat-card.highlight {
+  background: linear-gradient(135deg,#4f8ef7,#7ab0ff);
+  color: white;
+}
+
+.stat-card.highlight p { color: white; }
+
+/* MANAGEMENT */
+.manage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 2rem;
+}
+
+.panel {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.panel input {
+  width: 100%;
+  padding: .7rem;
+  margin: .4rem 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.panel button {
+  width: 100%;
+  padding: .7rem;
+  margin-top: .5rem;
+  border-radius: 10px;
+  border: none;
+  background: #4f8ef7;
+  color: white;
+  font-weight: 600;
+}
+
+.panel ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.panel li {
+  background: #f4f6fb;
+  padding: .6rem 1rem;
+  border-radius: 10px;
+  margin-bottom: .4rem;
+  display: flex;
+  justify-content: space-between;
+}
